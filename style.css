@@ -5,10 +5,51 @@
 body {
   max-width: 944px;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 @media screen and (min-width: 1000px) {
+  .intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .intro-header h1 {
+    width: 300px;
+  }
+
+  .intro-paragraphs {
+    max-width: 50ch;
+    margin-left: -60px;
+  }
+
+  .intro-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+  }
+
+  .header-button {
+    width: 120px;
+    height: 42px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+
+  .header-button:hover {
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+  }
+
+  .header-button:active {
+    background-color: rgb(71, 71, 71);
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -208,7 +249,28 @@ body {
     transform: scale(1.01);
     cursor: pointer;
   }
+
   /* Typograhpy */
+
+  .header-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .intro-header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .intro-header p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 21px;
+    font-size: 14px;
+    color: #646464;
+  }
 
   .myhomeworkapp h1 {
     font-family: "Roboto", sans-serif;
@@ -218,7 +280,7 @@ body {
 
   .myhomeworkapp p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 21px;
     font-size: 16px;
   }
@@ -243,7 +305,7 @@ body {
 
   .freeroom p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 21px;
     font-size: 16px;
   }
@@ -262,7 +324,7 @@ body {
 
   .kijijiautoposter p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 21px;
     font-size: 16px;
   }
@@ -281,7 +343,7 @@ body {
 
   .marketexchange p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 21px;
     font-size: 16px;
   }
@@ -300,7 +362,7 @@ body {
 
   .bitcoinbot p {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 21px;
     font-size: 16px;
   }
