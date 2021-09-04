@@ -3,8 +3,9 @@
 }
 
 body {
-  max-width: 950px;
+  max-width: 944px;
   margin: auto;
+  padding-top: 100px;
 }
 
 .container {
@@ -21,6 +22,61 @@ body {
 
 .myhomeworkapp {
   grid-area: myhomeworkapp;
+  background-color: #e4e4e4;
+  min-height: 414px;
+  border-radius: 6px;
+  background-image: url(./assets/myhomeworkapp.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.myhomeworkapp:hover {
+  transform: scale(1.015);
+  cursor: pointer;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.content-container > p {
+  width: 45%;
+}
+
+.myhomeworkapp h1 {
+  margin-bottom: 20px;
+}
+
+.tag {
+  max-width: fit-content;
+  padding: 5px 9px 5px 9px;
+  background-color: white;
+  border-radius: 6px;
+  display: inline;
+  margin-right: 11px;
+}
+
+.tags {
+  margin-bottom: 20px;
+}
+
+.myhomeworkapp button {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.button > img {
+  width: 17px;
+  height: 17px;
 }
 
 .freeroom {
@@ -37,4 +93,31 @@ body {
 
 .bitcoinbot {
   grid-area: bitcoinbot;
+}
+
+/* Typograhpy */
+
+.myhomeworkapp h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+}
+
+.myhomeworkapp p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+.tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.myhomeworkapp button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
 }
