@@ -8,116 +8,306 @@ body {
   padding-top: 100px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 28px 28px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "myhomeworkapp myhomeworkapp"
-    "freeroom kijijiautoposter"
-    "marketexchange bitcoinbot";
-}
+@media screen and (min-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 28px 28px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "myhomeworkapp myhomeworkapp"
+      "freeroom kijijiautoposter"
+      "marketexchange bitcoinbot";
+    margin-bottom: 50px;
+  }
 
-.myhomeworkapp {
-  grid-area: myhomeworkapp;
-  background-color: #e4e4e4;
-  min-height: 414px;
-  border-radius: 6px;
-  background-image: url(./assets/myhomeworkapp.png);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: scale(1);
-  transition: transform 0.3s;
-}
+  .myhomeworkapp {
+    grid-area: myhomeworkapp;
+    background-color: #e4e4e4;
+    min-height: 414px;
+    border-radius: 6px;
+    background-image: url(./assets/myhomeworkapp.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
 
-.myhomeworkapp:hover {
-  transform: scale(1.015);
-  cursor: pointer;
-}
+  .myhomeworkapp:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
 
-.content-container {
-  margin-left: 50px;
-}
+  .content-container1 {
+    margin-left: 50px;
+  }
 
-.content-container > p {
-  width: 45%;
-}
+  .content-container1 > p {
+    width: 45%;
+  }
 
-.myhomeworkapp h1 {
-  margin-bottom: 20px;
-}
+  .myhomeworkapp h1 {
+    margin-bottom: 20px;
+  }
 
-.tag {
-  max-width: fit-content;
-  padding: 5px 9px 5px 9px;
-  background-color: white;
-  border-radius: 6px;
-  display: inline;
-  margin-right: 11px;
-}
+  .tag {
+    max-width: fit-content;
+    padding: 5px 9px 5px 9px;
+    background-color: white;
+    border-radius: 6px;
+    display: inline;
+    margin-right: 11px;
+  }
 
-.tags {
-  margin-bottom: 20px;
-}
+  .tags {
+    margin-bottom: 25px;
+  }
 
-.myhomeworkapp button {
-  border: 0;
-  background-color: rgba(255, 255, 255, 0);
-}
+  .myhomeworkapp button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 0;
+  }
 
-.button {
-  display: flex;
-  align-items: center;
-}
+  .button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: fit-content;
+  }
 
-.button > img {
-  width: 17px;
-  height: 17px;
-}
+  .button:hover {
+    filter: opacity(0.6);
+  }
 
-.freeroom {
-  grid-area: freeroom;
-}
+  .myhomeworkapp button:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-.kijijiautoposter {
-  grid-area: kijijiautoposter;
-}
+  .button > img {
+    width: 17px;
+    height: 17px;
+  }
 
-.marketexchange {
-  grid-area: marketexchange;
-}
+  .freeroom {
+    grid-area: freeroom;
+    background-color: #e6eff4;
+    min-height: 414px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    background-image: url(./assets/freeroom.png);
+    background-size: cover;
+  }
 
-.bitcoinbot {
-  grid-area: bitcoinbot;
-}
+  .content-container2 {
+    margin: 40px;
+  }
 
-/* Typograhpy */
+  .freeroom button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 0;
+  }
 
-.myhomeworkapp h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 43px;
-}
+  .freeroom button:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-.myhomeworkapp p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 21px;
-  font-size: 16px;
-}
+  .freeroom:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
 
-.tag {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-}
+  .kijijiautoposter {
+    grid-area: kijijiautoposter;
+    background-color: #ececef;
+    min-height: 414px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    background-image: url(./assets/kijiji.png);
+    background-size: cover;
+  }
 
-.myhomeworkapp button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  .kijijiautoposter button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .kijijiautoposter button:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .kijijiautoposter:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+
+  .marketexchange {
+    grid-area: marketexchange;
+    background-color: #efefec;
+    min-height: 414px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    background-image: url(./assets/market.png);
+    background-size: cover;
+  }
+
+  .marketexchange button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .marketexchange button:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .marketexchange:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+
+  .bitcoinbot {
+    grid-area: bitcoinbot;
+    background-color: #eef4e6;
+    min-height: 414px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    background-image: url(./assets/bitcoin.png);
+    background-size: cover;
+  }
+
+  .bitcoinbot button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .bitcoinbot button:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bitcoinbot:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
+  /* Typograhpy */
+
+  .myhomeworkapp h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+  }
+
+  .myhomeworkapp p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .tag {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .myhomeworkapp button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .freeroom h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+  }
+
+  .freeroom p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .freeroom button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .kijijiautoposter h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+  }
+
+  .kijijiautoposter p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .kijijiautoposter button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .marketexchange h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+  }
+
+  .marketexchange p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .marketexchange button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .bitcoinbot h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 43px;
+  }
+
+  .bitcoinbot p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .bitcoinbot button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
