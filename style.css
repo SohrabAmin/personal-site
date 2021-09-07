@@ -5,7 +5,8 @@
 body {
   max-width: 944px;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 40px;
+  background-color: rgb(247, 247, 247);
 }
 
 @media screen and (min-width: 1000px) {
@@ -13,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 
   .intro-header h1 {
@@ -272,6 +273,15 @@ body {
     color: #646464;
   }
 
+  .intro-header::after {
+    content: "MY PROJECTS";
+    position: absolute;
+    top: 345px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
   .myhomeworkapp h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -289,6 +299,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
+    color: #272727cb;
   }
 
   .myhomeworkapp button {
