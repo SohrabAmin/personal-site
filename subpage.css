@@ -7,7 +7,14 @@
     max-width: 944px;
     margin: auto;
     padding-top: 40px;
+  }
+
+  .myhomeworkappBody {
     background-color: #e4e4e4;
+  }
+
+  .freeroomBody {
+    background-color: #e6eff4;
   }
 
   h1 {
