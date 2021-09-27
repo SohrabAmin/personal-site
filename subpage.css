@@ -17,6 +17,14 @@
     background-color: #e6eff4;
   }
 
+  .kijijiautoposterBody {
+    background-color: #ececef;
+  }
+
+  .marketexchangeBody {
+    background-color: #efefec;
+  }
+
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
